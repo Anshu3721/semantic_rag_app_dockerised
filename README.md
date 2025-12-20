@@ -101,9 +101,3 @@ Things I plan to add next:
 
 ---
 
-## Author
-
-**Anshu Kumar**
-If you're working on RAG / semantic search / GenAI systems and think this is useful, feel free to connect with me on LinkedIn.
-
-```
