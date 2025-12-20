@@ -1,4 +1,4 @@
-```markdown
+
 # Semantic Document Search (RAG Retrieval) — Streamlit + FAISS + LangChain
 
 I built this project to solve a simple (but common) problem: **searching and extracting the right information from long PDFs/TXT documents quickly**, without manually scanning pages.
