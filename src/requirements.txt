@@ -1,9 +1,0 @@
-streamlit
-langchain
-langchain-community
-sentence-transformers
-transformers
-torch
-pypdf
-faiss-cpu
-rich

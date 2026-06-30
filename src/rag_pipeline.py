@@ -9,9 +9,9 @@ import os
 from typing import List, Tuple
 
 from langchain_community.document_loaders import TextLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 
 # ------- CONFIGURATION -------- #
 CHUNK_SIZE = 800
@@ -83,6 +83,6 @@ class RAGPipeline:
         """
         Returns only the most relevant document chunks (as plain text).
         """
-        relevant_docs = self.mmr_retriever.get_relevant_documents(question)
+        relevant_docs = self.mmr_retriever.invoke(question)
         chunk_texts = [doc.page_content for doc in relevant_docs]
         return chunk_texts
