@@ -51,3 +51,4 @@ if st.session_state['rag'].vectorstore:
             show_error(f"Error retrieving context: {e}")
 else:
     st.info("Please upload a document to start.")
+# added one line
